@@ -7,13 +7,31 @@ h1{
 	font-family:Arial,sans-serif,impact;
 	font-size: 55px;
 	text-align: center;
+	margin-top:0;
+	margin-bottom:10px;
+}
+h1:hover{
+	color:brown;
 }
 p{
 	color:#403E31;
 	font-family: "Big Caslon", Georgia, serif;
 	font-size: 35px;
-	text-align: center;
 }	
+p:first-letter{
+	font-size:45px;
+	font-weight:bold;
+}
 hr{
 	border-color:#000000;
+}
+#content{
+	width:700px;
+	border-width: 2px;
+	border-color: #000000;
+	border-style: solid;
+	background-color:#BFBA94;
+	margin:50px auto 0 auto;
+	padding:20px;
+	border-radius:75px;
 }
