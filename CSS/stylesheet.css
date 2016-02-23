@@ -4,10 +4,16 @@ body{
 }
 h1{
 	color:#CC622F;
+	font-family:Arial,sans-serif,impact;
+	font-size: 55px;
+	text-align: center;
 }
 p{
 	color:#403E31;
-}
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 35px;
+	text-align: center;
+}	
 hr{
 	border-color:#000000;
 }
