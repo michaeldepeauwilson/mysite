@@ -1,14 +1,14 @@
 /* CSS */
 body{
-	background:#FFF8C6;
+	background-color:#B2855C;
 }
 /* 
 Website: My Programming Site v.1
 Author: MICHAEL H WILSON
 */
 h1{
-	color:#CC622F;
-	font-family:Arial,sans-serif,impact;
+	color:#FFD8B6 ;
+	font-family:;
 	font-size: 55px;
 	text-align: center;
 	margin-top:0;
@@ -18,7 +18,7 @@ h1:hover{
 	color:brown;
 }
 p{
-	color:#403E31;
+	color:#FFCB9C;
 	font-family: "Big Caslon", Georgia, serif;
 	font-size: 35px;
 }	
@@ -27,15 +27,15 @@ p:first-letter{
 	font-weight:bold;
 }
 hr{
-	border-color:#000000;
+	border-color:#9CEDFF;
 }
 /*content is style*/
 #content{
 	width:700px;
 	border-width: 2px;
-	border-color: #000000;
+	border-color: #9CEDFF;
 	border-style: solid;
-	background-color:#BFBA94;
+	background-color:#B2855C;
 	margin:50px auto 0 auto;
 	padding:20px;
 	border-radius:75px;
