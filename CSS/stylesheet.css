@@ -19,7 +19,9 @@ h1:hover{
 }
 img{
 	float:right;
-	padding:10px;
+	clear:right;
+	padding:10 10 5 5;
+
 }
 p{
 	color:#FFCB9C;
