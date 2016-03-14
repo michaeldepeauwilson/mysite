@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 		 <title>Intro to JavaScript</title>
+	</head>
+	<body>
+		<h1 class="headline">Intro to JavaScript</h1>
+ 		<div id="container"></div>
+ 		 <script>
+ 		 	// My First JavaScript
+ 		 	//document.write("Hello, World!");
+ 		 	//Create html element
+ 		 	var bodytext = document.createElement("p");
+ 		 	console.log(bodytext);
+ 		 	
+ 		 	//Create text element
+ 		 	var hello = document.createTextNode("Hello, World!");
+ 		 	console.log(hello);
+
+ 		 	//append text to paragraph element
+ 			bodytext.appendChild(hello);
+ 		 	
+ 		 	var c = document.getElementById("container");
+ 		 	console.log(c)
+
+ 		 	//add text to the container div
+ 		 	c.appendChild(bodytext);
+
+ 		 	//basic function syntax
+ 		 	//var myFunc = function(text){
+ 		 	//	console.log(text);
+ 		 	//}
+ 		 	//myFunc("My First Function");
+ 		 	//myFunc("My Second Function");
+ 		 	//myFunc("My Third Function");
+ 		 	//myFunc(2+2);
+ 		 	function myFunc(param){
+ 		 		console.log(param);
+ 		 		var container = document.getElementById("container");
+ 		 		var sub = document.createElement("h2");
+ 		 		var name = document.createTextNode("Hello, " + param +"!");
+ 		 		sub.appendChild(name);
+ 		 		container.appendChild(sub);
+ 		 	}
+ 		 	
+ 		 	function warn(name){
+ 		 		document.onload = alert("Sorry, " + name + "!" + " We seem to have a problem.");
+ 		 		console.log(name);
+ 		 		myFunc(name);
+
+ 		 	}
+
+ 		 	warn("Michael"); 		 
+ 		 	warn("Andrew");
+		 	warn("Sean");
+
+ 		 </script>
+	</body>
+</html>
