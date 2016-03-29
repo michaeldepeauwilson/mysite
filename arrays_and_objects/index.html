@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Week 7 - Arrays, Objects and Loops</title>
+</head>
+<body>
+  <h1 id="headline">Storing Data in JavaScript</h1>
+  <ul id="list"></ul>
+
+  <script>
+  	var movies = ["Shawshank Redemption", "The Matrix", "A River Runs Through It", "Legends of the Fall", "About Time"];
+  	console.log(movies);
+  	console.log(movies[2]);
+
+  	/**for (var i = 0; i < movies.length; i++) {
+  		alert(movies[i]);
+  	}; **/
+
+  	var movies = {
+  		title:"Shawshank Redemption",
+  		director:"Frank Darabont",
+  		releaseYear:"1994",
+  		image:"<img src='http://ia.media-imdb.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_UY1200_CR88,0,630,1200_AL_.jpg' />",
+  		buyLink:"https://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=shawshank+redemption"
+  	}
+  	console.log(movies);
+  	console.log(movies.director);
+
+
+  	var favMovies = [
+  		{
+  			title:"Shawshank Redemption",
+  			director:"Frank Darabont",
+  			releaseYear:"1994",
+  			genre: ["prison", "escape"]
+  		},
+  		{
+  			title:"The Matrix",
+  			director:"Lana and Lilly Wachowski",
+  			releaseYear:"1999",
+  			genre: ["prison", "escape", "action"]
+
+  		},
+  		{
+  			title:"Legends of the Fall",
+  			director:"Edward Zwick",
+  			releaseYear:"1994",
+  			genre: ["adventure", "legendary"]
+  		},
+  		{
+  			title:"About Time",
+  			director:"Richard Curtis",
+  			releaseYear:"2013",
+  			genre: ["timetravel", "love", "family"]
+
+  		},
+  		{
+  			title:"A River Runs Through It",
+  			director:"Robert Redford",
+  			releaseYear:"1992",
+  			genre: ["adventure", "legendary"]
+  		}
+  	]
+  	console.log(favMovies)
+
+  	for (var i = 0; i < favMovies.length; i++) {
+  			console.log(favMovies[i]);
+  			var listItem = document.createElement("li");
+  			
+  			var title	= document.createTextNode(
+  				favMovies[i].title);
+  			
+  			// var director = document.createTextNode(
+  			// 	favMovies[i].director);
+  			
+  			// var releaseYear = document.createTextNode(
+  			// 	favMovies[i].releaseYear);
+  			listItem.appendChild(title);
+  			document.getElementById("list").appendChild(listItem);
+  		}
+  		document.getElementById("headline").innerHTML = "My Favorite Movies";
+  </script>
+</body>
+</html>
